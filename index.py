@@ -6,8 +6,10 @@ from nltk.tokenize import word_tokenize
 import google.generativeai as genai
 import os
 
+
+nltk.download('punkt', download_dir="./nltk_data")
 # Configure NLTK
-nltk.data.path.append("nltk_data") 
+nltk.data.path.append("./nltk_data") 
 # nltk.download('punkt', download_dir="D:/work/newchatbotbuffml_2/nltk_data")
 
 # Configure Google Generative AI
